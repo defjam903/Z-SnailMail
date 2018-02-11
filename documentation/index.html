@@ -1,0 +1,697 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Sleek Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+
+	<link type="text/css" rel="stylesheet" href="styles/SyntaxHighlighter.css"></link>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,800' rel='stylesheet' type='text/css'>
+
+	<script language="javascript" src="script/shCore.js"></script>
+	<script language="javascript" src="script/shBrushCss.js"></script>
+	<script language="javascript" src="script/shBrushXml.js"></script>
+	<script language="javascript" src="script/shBrushJScript.js"></script>
+	<script language="javascript">
+	window.onload = function () {
+    dp.SyntaxHighlighter.ClipboardSwf = '/script/clipboard.swf';
+    dp.SyntaxHighlighter.HighlightAll('code');
+	}
+	</script>
+	<style type="text/css" media="screen">
+		body {font-family:Open Sans;}
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		pre, code{ 
+		font-size: 14px;
+		margin:1.5em 0;
+		white-space:pre;
+		}
+	</style>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt" style="text-transform: uppercase;color: #999;font-size: 15px;">&ldquo;Sleek - Responsive Multipurpose landing Page&rdquo; Documentation by &ldquo;theme.express&rdquo; v1.2</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Sleek - Responsive Multipurpose landing page&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 08/07/2016<br>
+					By: theme.express<br>
+					Email: support@theme.express 
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. 
+If you have any questions that are beyond the scope of this help file, please feel free to email us at support@theme.express. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#Tutorial">Tutorial</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a Responsive layout with four column. Based on Bootstrap Framework. All of the information within the main content area is nested within a div with an id of "container". The sidebar's (column #2) content is within a div with an id of "secondaryContent". The general template structure is the same throughout the template. Here is the general structure.</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+		
+		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<strong>For header</strong>
+<pre name="code" class="html">
+header {
+		background-color: #hexcode; //---for background change---//
+		color: #hexcode; //---for font color change---//
+}
+</pre>
+
+	<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using Five CSS files in this theme. The first one is the main source file for bootstrap framework</p> 
+
+		<p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  
+
+<pre name="code" class="html">
+
+/* 1. GLOBAL STYLES */
+css codes
+
+/* 2. HEADER */
+css codes
+	
+/* 3. INTRO STYLES */
+css codes
+	
+/* 4. TERMS / POPUP */
+css codes
+
+/* 5. SERVICES */
+css codes
+
+/* 6. FEATURES */
+css codes
+
+/* 7. INFO BOXES */
+css codes
+
+/* 8. INFO BOXES / DUAL */
+css codes
+
+/* 9. SCREENSHOTS  */
+css codes
+
+etc....
+</pre>
+		
+
+		<p>The third file contains all of the specific stylings for the Prettyphoto Lightbox.</p>  
+		<p>The fourth file contains all of the specific stylings for Skins.</p>  
+		<p>The fifth file contains all of the specific stylings for Font-Awesome Icons.</p>  
+
+		<p>Dont change anything in first(bootstrap.css) file.
+
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports Eleven Javascript files.</p>
+		
+		<ol>
+			<li>jQuery</li>
+		</ol>
+		  
+		<strong>Details</strong>
+		<ol>
+			<li>jquery.js - To enable jQuery</li>
+			<li>jquery.flexslider.js - Responsive Slider plugin</li>
+			<li>jquery.easing.min.js - Easing plugin</li>
+			<li>bootstrap.min.js - Bootstrap js file</li>
+			<li>jquery.prettyphoto.js - Prettyphoto Lightbox plugin</li>
+			<li>modernizr.custom.js - Modernizr js</li>
+			<li>owl.carousel.js - Owl Carousel Plugin</li>
+			<li>gmaps.js - Google Map</li>
+			<li>contact.js - Support file for PHP Contact form</li>
+			<li>slick.js - Custom theme support file</li>
+			<li>main.js - Custom theme support file</li>
+		</ol>
+
+		<hr>
+
+		<h3 id="Tutorial"><strong>D) Tutorial</strong> - <a href="#toc">top</a></h3>
+
+		<p>Follow the steps below to change the demo contents with your own contents.</p>
+
+</br>
+</br>
+
+<p><strong>1. LOGO SECTION</strong></p>
+<p>To replace the logo name, find this code</p>
+
+<pre name="code" class="html">
+	<a class="navbar-brand" href="./index.html">Sleek</a>
+</pre>
+<p>replace "<strong>Sleek</strong>" with your website name Or logo image url/source</p>
+
+</br>
+<hr>
+
+<p><strong>2. NAVMENU</strong></p>
+
+<p>Open contact.php file from "PHP" folder and find this code.</p>
+
+<pre name="code" class="html">
+	<ul class="nav navbar-nav navbar-right">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Sample Page</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</pre>
+
+</br>
+<p>Replace "Home", "Sample page" with the menu name and "#" with the page links.</br>
+</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>3. INTRO CONTENT</strong></p>
+
+<p><strong>Intro Content</strong></p>
+
+<p>Find this code</p>
+
+<pre name="code" class="html">
+	<div class="col-md-7">
+		<h2>Welcome to the<br>Sleek landing page</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sapien leo, consequat sed aliquam at, convallis sit amet metus. Vivamus malesuada, ex in placerat bibendum, est dui euismod sapien, eget tincidunt nunc ipsum ut mauris.</p>
+		<div class="dual-btns">
+			<a href="#">Purchase Now</a>
+			<a href="#">Learn More</a>
+		</div>
+	</div>
+</pre>
+
+<p>replace the text between "&lt;h2&gt;" "&lt;/h2&gt;" and "&lt;p&gt;" "&lt;/p&gt;" with the intro title and description.</br>
+<p>replace "<strong>Purchase Now</strong>" and "<strong>Learn More</strong>" with the button name.</br>
+<p>replace "#" with the button links.</br>
+<p>Same for all intro pages</br>
+
+</br>
+</br>
+<hr>
+
+<p><strong>Intro Slider</strong></p>
+
+<p>Find this code</p>
+
+<pre name="code" class="html">
+	<div id="main-slider" class="flexslider">
+		<ul class="slides">
+			<li><img src="images/slide/1.png" alt="" /></li>
+			<li><img src="images/slide/2.png" alt="" /></li>
+		</ul>
+	</div>
+</pre>
+
+<p>replace "<strong>images/slide/1.png</strong>" with the first slide image.</br>
+<p>Same for all. Unlimited slides can be added.</br>
+
+</br>
+</br>
+<hr>
+
+<p><strong>Intro Newsletter (mailchimp)</strong></p>
+<p>Open "subscribe.php" file from "PHP" folder and find this.</p>
+
+<pre name="code" class="html">
+$apiKey = 'YOUR_API_KEY';
+</pre>
+
+<p>Replace "YOUR_API_KEY" with your mailchimp API key - <a href="http://kb.mailchimp.com/accounts/management/about-api-keys#Find-or-Generate-Your-API-Key" target="_blank">How to get API key?</a></p>
+
+<br>
+
+<pre name="code" class="html">
+$listId = 'YOUR_LIST_ID';
+</pre>
+
+<p>Replace "YOUR_LIST_ID" with your mailchimp newsletter list id - <a href="http://kb.mailchimp.com/lists/managing-subscribers/find-your-list-id" target="_blank">How to get List ID?</a></p>
+
+<br>
+
+<pre name="code" class="html">
+$submit_url = "http://us3.api.mailchimp.com/1.3/?method=listSubscribe";
+</pre>
+
+<p>Replace "us3" with your actual data center (You can find the data center on the API key)</p>
+
+<br>
+
+</br>
+</br>
+<hr>
+
+<p><strong>Intro Countdown Timer</strong></p>
+
+<p>Open "main.js" file from "JS" folder and find this.</p>
+
+<pre name="code" class="html">
+    var endDate = "August 20, 2015";
+</pre>
+
+<p>replace "<strong>August 20, 2015</strong>" with your product/app launch date.</br>
+
+</br>
+</br>
+<hr>
+
+
+<p><strong>4. SERVICES SECTION</strong></p>
+<p>Find this code.</p>
+
+<pre name="code" class="html">
+				<div class="col-md-4 service-content sc1">
+					<span><i class="fa fa-hdd-o"></i></span>
+					<h4>Responsive Design</h4>
+					<p>Morbi laoreet scelerisque orci finibus ullam corper quam semper utac aliquam magna quis</p>
+					<a href="#">Learn More <i class="fa fa-angle-right"></i></a>
+				</div>
+</pre>
+
+</br>
+<p>To replace the icon, go to this <a href="http://fontawesome.io/icons" target=_blank">link</a> and choose your icon and replace "fa-hdd-o" with your icon name.</p>
+<p>Replace the text between "&lt;h4&gt;" "&lt;/h4&gt;" and "&lt;p&gt;" "&lt;/p&gt;" with the service title and description.</br>
+This will be the same for all service columns.</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>4. FEATURES</strong></p>
+<p>Find this code.</p>
+
+<p><strong>App Btns</strong></p>
+
+<pre name="code" class="html">
+					<!-- Download App Section -->
+					<div class="app-info">
+						<h3>Download App</h3>
+						<p>Morbi laoreet scelerisque orci finibus ullam corper quam semper utac aliquam magna quis</p>
+						<div class="app-btns">
+							<a href="#" class="fa fa-mobile" title="Download for Iphone"></a>
+							<a href="#" class="fa fa-android" title="Download for Android"></a>
+							<a href="#" class="fa fa-windows" title="Download for Windows"></a>
+						</div>
+					</div>
+</pre>
+
+</br>
+<p>Replace the text between "&lt;h3&gt;" "&lt;/h3&gt;" and "&lt;p&gt;" "&lt;/p&gt;" with the title and description.</br>
+Replace the links as per app name.</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>Features Content</strong></p>
+
+<pre name="code" class="html">
+					<div class="feature-content">
+						<i class="fa fa-magic"></i>
+						<h4>Multi Homepages</h4>
+						<p>Morbi laoreet scelerisque orci finibus ullam corper quam sed aliquam semper utac aliquam magna quis</p>
+					</div>
+</pre>
+
+</br>
+<p>Replace the text between "&lt;h4&gt;" "&lt;/h4&gt;" and "&lt;p&gt;" "&lt;/p&gt;" with the feature title and description.</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>6. SCREENSHOTS</strong></p>
+<p>Find this code</p>
+
+<pre name="code" class="html">
+	<div class="shots-thumb">
+		<a href="images/shots/1.jpg" class="prettyPhoto">
+			<img src="images/shots/1.jpg" class="img-responsive" alt=""/>
+		</a>
+	</div>
+</pre>
+
+<p>replace "images/shots/1.jpg" with screenshot img url or source.</p>
+<p>The First image is the Lightbox image(Zoom Image) and the second is the thumb image.</p>
+<p>See below for the structure</p>
+
+<pre name="code" class="html">
+	<div class="shots-thumb">
+		<a href="LIGHTBOX_IMAGE_URL_HERE" class="prettyPhoto">
+			<img src="THUMB_IMAGE_URL_HERE" class="img-responsive" alt=""/>
+		</a>
+	</div>
+</pre>
+
+</br>
+</br>
+<hr>
+
+<p><strong>7. TESTIMONIALS </strong></p>
+<p>Find this code</p>
+
+<pre name="code" class="html">
+					<div class="item">
+						<div class="col-md-7">
+							<div class="quote-info">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+								<cite>- John Doe<span>ABC Company</span></cite>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<img src="images/quote/1.png" class="img-responsive" alt=""/>
+						</div>
+					</div>
+</pre>
+
+<p>replace the text between "&lt;p&gt;" "&lt;/p&gt;" with the quote info.</br>
+<p>replace the text between "&lt;cite&gt;" "&lt;/cite&gt;" with the quote author info.</br>
+replace "images/quote/1.png" with the quote author image.</p>
+</br>
+</br>
+<hr>
+
+<p><strong>8. PRICING TABLE</strong></p>
+<p>Find this code</p>
+
+<pre name="code" class="html">
+			<!-- Pricing Plan - 1 -->
+				<div class="col-md-3">
+					<div class="panel panel-default text-center">
+						<div class="panel-heading">
+							<strong>Basic</strong>
+						</div>
+						<div class="panel-body">
+							<h3 class="panel-title price">$9<span class="price-cents">99</span></h3>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">5 Projects</li>
+							<li class="list-group-item">5 GB of Storage</li>
+							<li class="list-group-item">Up to 100 Users</li>
+							<li class="list-group-item">10 GB Bandwidth</li>
+							<li class="list-group-item">Security Suite</li>
+							<li class="list-group-item"><a class="btn-main" href="#">Sign Up Now!</a></li>
+						</ul>
+					</div>
+				</div>
+</pre>
+
+<p>replace "<strong>Basic</strong>" with the plan name.</br>
+replace the text between "&lt;div class="price"&gt;" "&lt;/div&gt;" and "&lt;div class="price-cents&gt;" "&lt;/div&gt;" with the plan price.</br>
+replace the text between "&lt;li&gt;" "&lt;/li&gt;" with the plan features.</br>
+replace the  "#" in "&lt;a href="#"&gt;" with the link to the plan page or checkout page.<br>
+</p>
+
+Do the same for all four.
+</br>
+</br>
+<hr>
+
+
+<p><strong>9. FAQ SECTION / Accordion</strong></p>
+<p>Find this code</p>
+
+<pre name="code" class="html">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										<i class="fa fa-comments-o"></i> 1. What is Lorem Ipsum?
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse in">
+									<div class="panel-body">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio ligula, blandit sit amet malesuada sit amet, vestibulum quis lectus. Quisque placerat non metus sed lobortis.      
+									</div>
+								</div>
+							</div>
+</pre>
+
+<p>replace "<strong>What is Lorem Ipsum?</strong>" with the faq question.</br>
+replace the text between "&lt;div class="panel-body"&gt;" "&lt;/div&gt;" with the answer for the faq.</br>
+</p>
+
+Do the same for all.
+</br>
+</br>
+<hr>
+
+<p><strong>9.1 FAQ SECTION / Video</strong></p>
+<p>Find this code</p>
+
+<pre name="code" class="html">
+	<iframe height="300" src="http://player.vimeo.com/video/92141950?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=0" width="500" ></iframe>
+</pre>
+
+<p>In the above code, replace "92141950" with your vimeo video url.</p>
+
+<h3>For youtube video</h3>
+
+Replace the above code with this.
+
+<pre name="code" class="html">
+<iframe src="http://www.youtube.com/embed/I_ClNxSST4M?hd=1&wmode=opaque&controls=1&showinfo=0"></iframe>
+</pre>
+
+<p>Here replace "I_ClNxSST4M" with the yourtube video ID.</p> 
+</br>
+</br>
+<hr>
+
+<p><strong>10. CLIENTS </strong></p>
+
+<pre name="code" class="html">
+					<ul>
+						<li><a href="#"><img src="images/clients/1.png" class="img-responsive" alt=""/></a></li>
+						<li><a href="#"><img src="images/clients/2.png" class="img-responsive" alt=""/></a></li>
+						<li><a href="#"><img src="images/clients/3.png" class="img-responsive" alt=""/></a></li>
+						<li><a href="#"><img src="images/clients/4.png" class="img-responsive" alt=""/></a></li>
+						<li><a href="#"><img src="images/clients/6.png" class="img-responsive" alt=""/></a></li>
+					</ul>
+</pre>
+
+<p>replace <strong>images/clients/1.png</strong> with the client logo.</br>
+Same for all.
+</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>11. GOOGLEMAP </strong></p>
+
+<p>Open "main.js" rom "JS" folder and find this.</p>
+
+<pre name="code" class="html">
+        lat: 40.712784,
+        lng: -74.005941,
+</pre>
+
+<p>You will find this code twice. Both should be updated<br>
+Go to this <a href="http://itouchmap.com/latlong.html" target="_blank">link</a> and in the search bar update your location or address and press go.<br>
+Scroll down the page to see the lattitude and longitude of your location. Update those here in both places and save.</p>
+</ol>
+
+<br>
+<hr>
+
+<p><strong>12. CONTACT INFO</strong></p>
+
+<p>Find this code</p>
+
+<pre name="code" class="html">
+					<ul class="contact-info">
+						<li>
+							<i class="fa fa-phone"></i>
+							+1800 1234 5678
+						</li>
+						<li>
+							<i class="fa fa-envelope-o"></i>
+							info@domain.com
+						</li>
+						<li>
+							<i class="fa fa-map-marker"></i>
+							#12, Some Street County 123456
+						</li>
+						<li>
+							<div class="f-social">
+								<a href="#" class="fa fa-facebook"></a>
+								<a href="#" class="fa fa-twitter"></a>
+								<a href="#" class="fa fa-google-plus"></a>
+								<a href="#" class="fa fa-dribbble"></a>
+								<a href="#" class="fa fa-instagram"></a>
+							</div>
+						</li>
+					</ul>
+</pre>
+
+replace <strong>+1800 1234 5678</strong> with your company contact number.</br>
+replace <strong>info@domain.com</strong> and <strong>support@website.com</strong> with the company email.</br>
+replace <strong>#12, Some Street County 123456</strong> with your company Address.</br>
+replace the social icons as per the name
+</p>
+
+</br>
+</br>
+<hr>
+
+
+<p><strong>13. CONTACT FORM</strong></p>
+
+<p>Open "contact.php" file from "PHP" folder and find this code.</p>
+
+<pre name="code" class="html">
+
+define( "RECIPIENT_NAME", "YOUR_NAME_HERE" );
+define( "RECIPIENT_EMAIL", "YOUR_EMAIL_HERE" );
+					
+</pre>
+
+</br>
+<p>
+Replace "YOUR_NAME_HERE" with your name</br>
+Replace "YOUR_EMAIL_HERE" with your email, where you want to receive the mails.</br>
+</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>14. COPYRIGHT</strong></p>
+
+<pre name="code" class="html">
+
+					<p>&copy; 2016. Sleek. All rights reserved. Designed by <a href="https://theme.express" target="_blank">theme.express</a>.</p>
+					
+</pre>
+
+<p>Replace the Copyright contents with yours.</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>15. TERMS / POPUP</strong></p>
+
+<p>Open "index.html" and find this</p>
+<pre name="code" class="html">
+
+<div class="terms">
+	<span class="t-close fa fa-close"></span>
+	<h3>Terms and Conditions</h3>
+	<ul>
+		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed justo a erat blandit maximus. Mauris et odio eu nisl viverra pharetra vel quis ante. Sed finibus mauris nisl, vel semper diam rutrum id. Phasellus placerat augue ac fringilla lacinia. Cras feugiat feugiat nulla, eu dignissim ante faucibus in. Phasellus a quam nunc. Nulla ac vehicula ipsum. In molestie egestas magna vitae euismod. Donec aliquet pellentesque nulla, in blandit felis aliquet id. Nunc vel mauris eget est convallis aliquam. Aliquam arcu augue, tincidunt convallis metus non, blandit fringilla lacus.</li>
+		<li>Sed varius et augue eu tristique. Duis pulvinar, lorem ac vestibulum accumsan, lorem augue elementum magna, vitae vehicula orci ante at augue. Nam placerat, nulla sit amet placerat lobortis, ante sem dapibus purus, quis efficitur ipsum ipsum eget leo. Cras elementum id neque eget euismod. Vestibulum tempus, eros vitae rutrum malesuada, metus dui viverra arcu, ac molestie nisl lacus ut tellus. Proin condimentum quam quis urna venenatis cursus. Donec sit amet felis in purus convallis imperdiet quis in mi. Sed gravida, purus nec porta dapibus, est elit egestas ante, sit amet dignissim eros mauris a tortor. Integer erat elit, porttitor et lobortis a, mollis eu turpis. Etiam porttitor augue nec erat luctus, eu varius orci malesuada. Phasellus blandit leo id pretium rutrum. Nunc ac vestibulum lacus. In viverra laoreet orci, vitae dictum turpis. Nunc metus neque, rhoncus eget rhoncus congue, cursus a turpis. Duis placerat turpis nunc, vitae elementum nibh pellentesque convallis. Maecenas pulvinar leo sed fringilla venenatis.</li>
+		<li>Nulla tristique libero ut pellentesque mollis. Praesent condimentum viverra lacus, at consequat sapien ultricies quis. Suspendisse nec gravida nisl, et euismod arcu. Etiam eu condimentum risus, vel gravida lacus. In vitae est a nisl scelerisque molestie id a libero. Ut eget nisi at dolor maximus hendrerit. Nam non mattis ex, quis mattis velit.</li>
+	</ul>
+</div>
+					
+</pre>
+
+<p>Replace the text between "&lt;h3&gt;" "&lt;/h3&gt;" with the title.</p>
+<p>Replace the text between "&lt;li&gt;" "&lt;/li&gt;" with the terms.</p>
+
+</br>
+</br>
+<hr>
+
+<p><strong>16. SKINS</strong></p>
+
+<p>Below is the list of colors.</p>
+
+		<img src="assets/images/skin.png" alt="HTML Structure" />
+
+<p>Choose a color and next to it is the skin color name.</p>
+<p>Now in "index.html" file,find this</p>
+
+<pre name="code" class="html">
+	<link rel="stylesheet" title="blue" href="css/colors/skin-blue.css"/>
+</pre>
+
+<p>replace "<strong>skin-blue.css</strong>" with the color name you choose. (Eg: If you choose yellow replace as "<strong>skin-yellow.css</strong>").</p>
+</br>
+</br>
+<hr>
+
+
+<h3>Thats it. You are done. Now your website is ready to launch.</h3>
+
+</br>
+</br>
+</br>
+<hr>
+
+		
+	
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, cons, plugins, fonts or other files as listed.
+		<div style="clear:both;"></div>
+		<ul>
+			<li>Google WebFont used - <a href="http://www.google.com/webfonts/specimen/Josefin+Sans" target="_blank">Josefin Sans</a></li>
+			<li>Google WebFont used - <a href="http://www.google.com/webfonts/specimen/Vampiro+One" target="_blank">Vampiro One</a></li>
+			<li>Google WebFont used - <a href="http://www.google.com/webfonts/specimen/Open+Sans" target="_blank">Open Sans</a></li>
+			<li>Responsive carousel by - <a href="http://owlgraphic.com/owlcarousel">owlgraphic.com</a></li>
+			<li>Flexslider plugin by - <a href="http://flexslider.woothemes.com" target="_blank">Woothemes.com</a></li>
+			<li>Fonticons by - <a href="http://fontawesome.io" target="_blank">fontawesome</a></li>
+			<li>Demo images from - <a href="http://pixeden.com/" target="_blank">Pixeden.com</a></li>
+			<li>Demo images from - <a href="http://behance.net/" target="_blank">Behance</a></li>
+			<li>Demo images from - <a href="http://photodune.net/" target="_blank">Photodune</a></li>
+			<li>Demo images from - <a href="http://pixabay.com/" target="_blank">Pixabay</a></li>
+		</ul>		
+		<hr>
+		<p> All images, Icons, Logos, Fonts used in this template are free for commercial use.</p>
+		
+
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>theme.express</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
